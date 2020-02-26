@@ -1,3 +1,10 @@
+@import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot");
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.svg#COCOGOOSE") format("svg");
+}
 
 *,
 *::before,
@@ -6,3 +13,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+h1,h2 {
+  font-family: COCOGOOSE;
+}
+
+h3,p {
+  font-family: 'Lato', sans-serif ;
+}
+
+/* https://www.freepik.com/free-photo/hand-crowd-disco_1419713.htm#page=1&query=music%20festival&position=4 */
+
+
