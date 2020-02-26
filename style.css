@@ -14,14 +14,171 @@
   box-sizing: border-box;
 }
 
-h1,h2 {
-  font-family: COCOGOOSE;
+h1,
+h2 {
+  font-family: COCOGOOSE, sans-serif;
 }
 
-h3,p {
-  font-family: 'Lato', sans-serif ;
+h3,
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* https://www.freepik.com/free-photo/hand-crowd-disco_1419713.htm#page=1&query=music%20festival&position=4 */
 
+header {
+  background-color: #272a31;
+  color: white;
+  height: 30px;
+}
 
+.head-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+}
+
+.nav-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s-list {
+  display: flex;
+}
+
+.s-list li {
+  margin-left: 2rem;
+}
+
+.s-list a {
+  color: #d3d3d3;
+}
+
+/* Hero */
+
+.hero {
+  background-image: url(img/hero2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
+.hero-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-wrapper h3 {
+  color: #ec5242;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.big-text {
+  color: #ec5242;
+  font-size: 5rem;
+}
+
+.exp {
+  border: 1px solid white;
+  background-color: rgba(189, 167, 167, 0.5);
+  max-width: 800px;
+}
+
+/* Program */
+
+.program {
+  background-color: gray;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.program-title {
+  color: #d3d3d3;
+}
+
+.boxes {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgba(177, 177, 177, 0.5);
+  margin: 5px;
+  height: 200px;
+}
+
+.box h3 {
+  color: #ec5242;
+}
+
+/* Line up */
+
+.lineup-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.band {
+  display: flex;
+  justify-content: space-between;
+}
+
+.band-imgwrapper {
+  height: 100px;
+  min-width: 100px;
+  background-color: #f7897a;
+}
+
+.toptext {
+  color: #ec5242;
+  font-size: 0.8rem;
+}
+
+.bottomtext {
+  color: #272a31;
+  font-size: 0.8rem;
+}
