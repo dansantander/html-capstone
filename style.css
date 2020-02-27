@@ -67,7 +67,7 @@ header {
 }
 
 .nav-wrapper {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -106,9 +106,15 @@ header {
 }
 
 .hero-wrapper {
-  width: 80%;
+  width: 70%;
   height: inherit;
   margin: 0 auto;
+  position: relative;
+}
+
+.hero-inner {
+  position: absolute;
+  bottom: 6rem;
 }
 
 .hero-wrapper h3 {
@@ -119,6 +125,7 @@ header {
 }
 
 .big-text {
+  margin: 2rem 0;
   color: #272a31;
   font-size: 6rem;
   line-height: 5rem;
@@ -129,10 +136,13 @@ header {
   border: 1px solid white;
   background-color: rgba(219, 219, 219, 0.5);
   max-width: 800px;
+  margin: 2rem 0;
+  padding: 2rem;
 }
 
 .date h2 {
   color: #ec5242;
+  font-size: 2rem;
 }
 
 /* Program */
@@ -173,10 +183,9 @@ header {
 }
 
 .boxes {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   justify-content: space-between;
   padding: 2rem 0;
 }
@@ -222,7 +231,7 @@ header {
 }
 
 .lineup-wrapper {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -275,7 +284,7 @@ header {
 }
 
 .sponsors-wrapper {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   height: 25vh;
   padding-bottom: 2rem;
