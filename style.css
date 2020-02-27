@@ -174,9 +174,13 @@ header {
 .program {
   background-image: url(img/programbg.jpg);
   min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.see-more {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .program a {
@@ -187,7 +191,14 @@ header {
   margin-bottom: 2rem;
 }
 
+.title-wrapper {
+  width: 20%;
+  margin: 0 auto;
+}
+
 .program-title {
+  text-align: center;
+  margin: 0 auto;
   color: #d3d3d3;
   padding-bottom: 1rem;
   position: relative;
@@ -196,21 +207,18 @@ header {
   padding-top: 2rem;
 }
 
-.program-title::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 3rem;
-  height: 1px;
-  width: 30%;  /* or 100px */
-  border-bottom: 1px solid #ec5242;
+.bottomline {
+  width: 20%;
+  margin: 0 auto;
+  border-bottom: 1px solid orangered;
 }
 
 .boxes {
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
   padding: 2rem 0;
 }
 
@@ -222,7 +230,6 @@ header {
   text-align: center;
   background-color: rgba(84, 88, 110, 0.5);
   height: 200px;
-  max-width: 200px;
   padding: 20px 10px;
 }
 
@@ -257,18 +264,12 @@ header {
 .lineup-wrapper {
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 2rem;
-}
-
-.bands {
-  padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-gap: 2rem;
 }
 
 .band {
@@ -278,7 +279,7 @@ header {
 
 .band-imgwrapper {
   height: 120px;
-  width: 100px;
+  width: 150px;
   overflow: hidden;
 }
 
@@ -306,6 +307,7 @@ header {
 
 .sponsors {
   background-color: #424242;
+  height: 30vh;
 }
 
 .sponsors-wrapper {
@@ -319,14 +321,20 @@ header {
 }
 
 .sponsors-logos {
+  margin: 0 auto;
+  width: 90%;
   padding-top: 2rem;
+  justify-content: space-between;
   display: flex;
 }
 
+.sp-container {
+  max-width: 150px;
+}
+
 .spon-logo {
-  width: 150px;
+  width: 100%;
   filter: opacity(80%);
-  margin: 0 2rem;
 }
 
 /* Footer */
@@ -340,17 +348,90 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 2rem 0;
 }
 
 .footer-logo {
-  padding-top: 1rem;
   width: 200px;
   fill: #424242;
 }
 
 .footer-info {
   width: 70%;
-  padding-left: 2rem;
+  padding-left: 5rem;
   font-size: 0.8rem;
+}
+
+/* MOBILE SIZE */
+
+@media (max-width: 768px) {
+  header,
+  .navbar {
+    display: none;
+  }
+
+  .hero-wrapper {
+    width: 90%;
+  }
+
+  .hero-inner h3 {
+    margin-bottom: 1rem;
+  }
+
+  .big-text {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0;
+  }
+
+  .exp {
+    margin: 1rem 0;
+  }
+
+  .date h2 {
+    font-size: 1rem;
+  }
+
+  .boxes {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .lineup-wrapper {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr;
+    grid-gap: 15px;
+    text-align: start;
+    height: auto;
+  }
+
+  .box i {
+    font-size: 2rem;
+  }
+
+  .box h3 {
+    font-size: 15px;
+  }
+
+  .box p {
+    font-size: 12px;
+  }
+
+  .band-imgwrapper {
+    width: 180px;
+  }
+
+  .footer-info {
+    padding-left: 2rem;
+  }
+
+  .ticketmaster-info {
+    display: none;
+  }
 }
