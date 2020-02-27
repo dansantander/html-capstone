@@ -139,18 +139,18 @@ header {
 
 .program {
   background-image: url(img/programbg.jpg);
-  height: 70vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 }
 
 .program a {
   color: #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
-  padding-bottom: 2px;
+  padding-top: 1rem;
   font-size: 15px;
+  margin-bottom: 2rem;
 }
 
 .program-title {
@@ -159,13 +159,14 @@ header {
   position: relative;
   font-size: 1.5rem;
   font-weight: 400;
+  padding-top: 2rem;
 }
 
 .program-title::before {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 2.3rem;
+  left: 3rem;
   height: 1px;
   width: 30%;  /* or 100px */
   border-bottom: 1px solid #ec5242;
@@ -177,6 +178,7 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
+  padding: 2rem 0;
 }
 
 .box {
@@ -188,7 +190,7 @@ header {
   background-color: rgba(84, 88, 110, 0.5);
   height: 200px;
   max-width: 200px;
-  padding: 15px 10px;
+  padding: 20px 10px;
 }
 
 .box h3 {
@@ -207,8 +209,16 @@ header {
 
 /* Line up */
 
+.line-up {
+  background-color: #f3f3f3;
+}
+
 .program-title.dark {
   color: #272a31;
+}
+
+.program-title.dark::before {
+  left: 3.5rem;
 }
 
 .lineup-wrapper {
@@ -218,9 +228,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 2rem;
 }
 
 .bands {
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
@@ -231,19 +243,19 @@ header {
   justify-content: space-between;
 }
 
- .band-imgwrapper {
-  height: 60px;
-  width: 150px;
-  background-color: #f7897a;
+.band-imgwrapper {
+  height: 110px;
+  width: 100px;
+  overflow: hidden;
 }
 
 .band-img {
-  width: 100%;
-  height: inherit;
+  width: 200%;
 }
 
 .band-info {
   max-width: 400px;
+  margin-left: 2rem;
 }
 
 .toptext {
@@ -259,25 +271,44 @@ header {
 /* Sponsors */
 
 .sponsors {
-  background-color: #4d4d4d;
+  background-color: #353434;
 }
 
 .sponsors-wrapper {
   width: 80%;
   margin: 0 auto;
   height: 25vh;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 }
 
 .sponsors-logos {
+  padding-top: 2rem;
   display: flex;
 }
 
 .spon-logo {
   width: 100px;
-  filter: grayscale(10);
+  filter: opacity(80%);
+  margin: 0 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #f3f3f3;
+}
+
+.footer-box {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.footer-info {
+  width: 50%;
 }
