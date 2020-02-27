@@ -62,7 +62,8 @@ header {
   position: sticky;
   top: 0;
   border-bottom: 1px solid rgb(241, 241, 241);
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 18px #888;
+  z-index: 1;
 }
 
 .nav-wrapper {
@@ -138,15 +139,36 @@ header {
 
 .program {
   background-image: url(img/programbg.jpg);
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
+.program a {
+  color: #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 2px;
+  font-size: 15px;
+}
+
 .program-title {
   color: #d3d3d3;
+  padding-bottom: 1rem;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.program-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2.3rem;
+  height: 1px;
+  width: 30%;  /* or 100px */
+  border-bottom: 1px solid #ec5242;
 }
 
 .boxes {
@@ -154,28 +176,48 @@ header {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
 }
 
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
-  background-color: rgba(208, 215, 238, 0.5);
-  margin: 5px;
+  background-color: rgba(84, 88, 110, 0.5);
   height: 200px;
+  max-width: 200px;
+  padding: 15px 10px;
 }
 
 .box h3 {
   color: #ec5242;
+  font-weight: 300;
+}
+
+.box i {
+  color: white;
+}
+
+.box p {
+  font-size: 0.8rem;
+  color: #d3d3d3;
 }
 
 /* Line up */
 
+.program-title.dark {
+  color: #272a31;
+}
+
 .lineup-wrapper {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .bands {
@@ -189,10 +231,19 @@ header {
   justify-content: space-between;
 }
 
-.band-imgwrapper {
-  height: 100px;
-  min-width: 100px;
+ .band-imgwrapper {
+  height: 60px;
+  width: 150px;
   background-color: #f7897a;
+}
+
+.band-img {
+  width: 100%;
+  height: inherit;
+}
+
+.band-info {
+  max-width: 400px;
 }
 
 .toptext {
@@ -203,4 +254,30 @@ header {
 .bottomtext {
   color: #272a31;
   font-size: 0.8rem;
+}
+
+/* Sponsors */
+
+.sponsors {
+  background-color: #4d4d4d;
+}
+
+.sponsors-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  height: 25vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sponsors-logos {
+  display: flex;
+}
+
+.spon-logo {
+  width: 100px;
+  filter: grayscale(10);
 }
