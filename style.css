@@ -59,6 +59,10 @@ header {
 .navbar {
   background-color: rgb(255, 255, 255);
   height: 60px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .nav-wrapper {
@@ -73,17 +77,27 @@ header {
 }
 
 .s-list li {
-  margin-left: 2rem;
+  margin-left: 3rem;
+  margin-top: 1.4rem;
 }
 
 .s-list a {
-  color: #d3d3d3;
+  color: #272a31;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.logo-img {
+  width: 100%;
 }
 
 /* Hero */
 
 .hero {
-  background-image: url(img/hero2.jpg);
+  background-image: url(img/hero5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -92,30 +106,38 @@ header {
 
 .hero-wrapper {
   width: 80%;
+  height: inherit;
   margin: 0 auto;
 }
 
 .hero-wrapper h3 {
   color: #ec5242;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .big-text {
-  color: #ec5242;
-  font-size: 5rem;
+  color: #272a31;
+  font-size: 6rem;
+  line-height: 5rem;
+  max-width: 700px;
 }
 
 .exp {
   border: 1px solid white;
-  background-color: rgba(189, 167, 167, 0.5);
+  background-color: rgba(219, 219, 219, 0.5);
   max-width: 800px;
+}
+
+.date h2 {
+  color: #ec5242;
 }
 
 /* Program */
 
 .program {
-  background-color: gray;
+  background-image: url(img/programbg.jpg);
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -140,7 +162,7 @@ header {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  background-color: rgba(177, 177, 177, 0.5);
+  background-color: rgba(208, 215, 238, 0.5);
   margin: 5px;
   height: 200px;
 }
