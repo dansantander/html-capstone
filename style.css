@@ -121,6 +121,10 @@ header {
 
 /* Hero */
 
+.fas.fa-bars {
+  display: none;
+}
+
 .hero {
   background-image: url(img/hero5.jpg);
   background-repeat: no-repeat;
@@ -373,6 +377,15 @@ footer {
 
   .hero-wrapper {
     width: 90%;
+    position: relative;
+  }
+
+  .fas.fa-bars {
+    display: block;
+    color: #272a31;
+    opacity: 80%;
+    position: absolute;
+    top: 2rem;
   }
 
   .hero-inner h3 {
