@@ -42,23 +42,39 @@ header {
 }
 
 .head-wrapper {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 0.4rem;
 }
 
 .links a {
   text-decoration: none;
   color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.socials {
+  float: right;
+  margin: 0 2rem;
+}
+
+.socials i {
+  padding: 0 5px;
+}
+
+.links {
+  width: 180px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Navbar */
 
 .navbar {
   background-color: rgb(255, 255, 255);
-  height: 60px;
+  height: 65px;
   position: sticky;
   top: 0;
   border-bottom: 1px solid rgb(241, 241, 241);
@@ -84,6 +100,14 @@ header {
 
 .s-list a {
   color: #272a31;
+  font-size: 0.8rem;
+}
+
+.sl-item.campaign {
+  border: 4px solid #ec5242;
+  color: #ec5242;
+  padding: 8px;
+  margin-left: 2rem;
 }
 
 .logo {
@@ -133,8 +157,8 @@ header {
 }
 
 .exp {
-  border: 1px solid white;
-  background-color: rgba(219, 219, 219, 0.5);
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
   max-width: 800px;
   margin: 2rem 0;
   padding: 2rem;
@@ -253,7 +277,7 @@ header {
 }
 
 .band-imgwrapper {
-  height: 110px;
+  height: 120px;
   width: 100px;
   overflow: hidden;
 }
@@ -275,12 +299,13 @@ header {
 .bottomtext {
   color: #272a31;
   font-size: 0.8rem;
+  padding-top: 1.2rem;
 }
 
 /* Sponsors */
 
 .sponsors {
-  background-color: #353434;
+  background-color: #424242;
 }
 
 .sponsors-wrapper {
@@ -299,7 +324,7 @@ header {
 }
 
 .spon-logo {
-  width: 100px;
+  width: 150px;
   filter: opacity(80%);
   margin: 0 2rem;
 }
@@ -314,10 +339,18 @@ footer {
   width: 70%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem 0;
 }
 
+.footer-logo {
+  padding-top: 1rem;
+  width: 200px;
+  fill: #424242;
+}
+
 .footer-info {
-  width: 50%;
+  width: 70%;
+  padding-left: 2rem;
+  font-size: 0.8rem;
 }
