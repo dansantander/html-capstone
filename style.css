@@ -144,9 +144,29 @@ header {
   position: relative;
 }
 
+.route {
+  position: absolute;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  top: 2rem;
+  right: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.fa-chevron-right {
+  color: #ec5242;
+}
+
 .hero-inner {
   position: absolute;
   bottom: 6rem;
+}
+
+.hero-inner.about {
+  text-align: center;
 }
 
 .hero-wrapper h3 {
@@ -162,6 +182,12 @@ header {
   font-size: 6rem;
   line-height: 5rem;
   max-width: 700px;
+}
+
+.big-text.about {
+  font-size: 5rem;
+  color: #ec5242;
+  max-width: initial;
 }
 
 .exp {
@@ -352,7 +378,7 @@ header {
 
 /* See past */
 .see-past {
-  height: 600px;
+  height: 500px;
 }
 
 .see-past-img {
@@ -430,7 +456,7 @@ footer {
 }
 
 .footer.about {
-  background-color: #424242;
+  background-color: #272a31;
   color: #d3d3d3;
 }
 
@@ -446,6 +472,10 @@ footer {
 .footer-logo {
   width: 200px;
   fill: #424242;
+}
+
+.footer.about .footer-logo {
+  fill: white;
 }
 
 .footer-info {
