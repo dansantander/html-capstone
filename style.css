@@ -33,8 +33,6 @@ ul {
   list-style-type: none;
 }
 
-/* https://www.freepik.com/free-photo/hand-crowd-disco_1419713.htm#page=1&query=music%20festival&position=4 */
-
 header {
   background-color: #272a31;
   color: white;
@@ -119,6 +117,8 @@ header {
   width: 100%;
 }
 
+/* ----- MAIN PAGE ----- */
+
 /* Hero */
 
 .fas.fa-bars {
@@ -133,7 +133,7 @@ header {
   height: 750px;
 }
 
-.hero.b {
+.hero.about {
   background-image: url(img/hero5b.jpg);
 }
 
@@ -324,11 +324,72 @@ header {
   display: none;
 }
 
+/* About */
+
+.about-logo {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.about-logowrapper {
+  border: none;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 2rem 5rem;
+}
+
+.about-logo.img {
+  border: 1px solid #d3d3d3;
+  max-width: 300px;
+  margin: 2rem auto;
+}
+
+.aurora-about-logo {
+  width: 100%;
+}
+
+/* See past */
+.see-past {
+  height: 600px;
+}
+
+.see-past-img {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  justify-self: center;
+}
+
+.past-ed1 {
+  background-image: linear-gradient(115deg, rgba(252, 64, 7, 0.6), rgba(185, 53, 0, 0.5)), url(img/past-ed1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-ed1.two {
+  background-image: linear-gradient(115deg, rgba(252, 64, 7, 0.6), rgba(185, 53, 0, 0.5)), url(img/past-ed2.jpg);
+}
+
 /* Sponsors */
 
 .sponsors {
   background-color: #424242;
   height: 200px;
+}
+
+.sponsors.about {
+  display: none;
 }
 
 .sponsors-wrapper {
@@ -366,6 +427,11 @@ header {
 
 footer {
   background-color: #f3f3f3;
+}
+
+.footer.about {
+  background-color: #424242;
+  color: #d3d3d3;
 }
 
 .footer-box {
