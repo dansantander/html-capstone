@@ -133,6 +133,10 @@ header {
   height: 750px;
 }
 
+.hero.b {
+  background-image: url(img/hero5b.jpg);
+}
+
 .hero-wrapper {
   width: 70%;
   height: inherit;
@@ -506,7 +510,9 @@ footer {
   }
 
   .sponsors-wrapper {
-    width: 80%;
+    min-width: 200px;
+    max-width: 45%;
+    height: auto;
   }
 
   .sponsors-logos {
