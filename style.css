@@ -354,6 +354,10 @@ header {
   filter: opacity(80%);
 }
 
+.sponsors-wrapper.appear {
+  display: none;
+}
+
 /* Footer */
 
 footer {
@@ -412,6 +416,7 @@ footer {
   }
 
   .exp {
+    font-size: 1em;
     margin: 1rem 0;
   }
 
@@ -420,6 +425,10 @@ footer {
   }
 
   /* Program Mobile */
+
+  .title-wrapper {
+    width: 60%;
+  }
 
   .boxes {
     width: 90%;
@@ -488,6 +497,25 @@ footer {
 
   .fa-chevron-down {
     color: #ec5242;
+  }
+
+  /* Sponsors Mobile */
+
+  .sponsors {
+    height: 250px;
+  }
+
+  .sponsors-wrapper {
+    width: 80%;
+  }
+
+  .sponsors-logos {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .sp-container {
+    max-width: 80px;
   }
 
   /* Footer Mobile */
