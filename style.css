@@ -251,6 +251,15 @@ header {
   color: #d3d3d3;
 }
 
+.program-btn {
+  background-color: #ec5242;
+  color: white;
+  border: none;
+  padding: 30px 25px;
+  font-size: 1rem;
+  display: none;
+}
+
 /* Line up */
 
 .line-up {
@@ -307,11 +316,15 @@ header {
   padding-top: 1.2rem;
 }
 
+.lineup-btn {
+  display: none;
+}
+
 /* Sponsors */
 
 .sponsors {
   background-color: #424242;
-  height: 30vh;
+  height: 200px;
 }
 
 .sponsors-wrapper {
@@ -406,12 +419,9 @@ footer {
     font-size: 1rem;
   }
 
-  .boxes {
-    width: 90%;
-    grid-template-columns: 1fr;
-  }
+  /* Program Mobile */
 
-  .lineup-wrapper {
+  .boxes {
     width: 90%;
     grid-template-columns: 1fr;
   }
@@ -436,9 +446,51 @@ footer {
     font-size: 12px;
   }
 
+  .see-more {
+    display: none;
+  }
+
+  .program-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .program-btn:hover {
+    cursor: pointer;
+  }
+
+  /* Line up Mobile */
+
+  .lineup-wrapper {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
   .band-imgwrapper {
     width: 180px;
   }
+
+  .band.disappear {
+    display: none;
+  }
+
+  .lineup-btn {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+  }
+
+  .lineup-btn:hover {
+    cursor: pointer;
+  }
+
+  .fa-chevron-down {
+    color: #ec5242;
+  }
+
+  /* Footer Mobile */
 
   .footer-info {
     padding-left: 2rem;
