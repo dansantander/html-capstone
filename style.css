@@ -169,7 +169,7 @@ header {
   text-align: center;
 }
 
-.hero-wrapper h3 {
+.hello {
   color: #ec5242;
   font-size: 2rem;
   font-weight: 400;
@@ -217,6 +217,31 @@ header {
   font-weight: 600;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.tickets-tablewrapper {
+  margin-top: 2rem;
+  border: 1px dashed rgb(96, 142, 240);
+  padding: 1rem;
+}
+
+.tickets-table {
+  border: 1px dashed #ec5242;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+th,
+td {
+  padding: 2rem;
+}
+
+.top-row {
+  background-color: #ebebeb;
+}
+
+.nth-row {
+  background-color: white;
 }
 
 /* Program */
@@ -529,16 +554,14 @@ footer {
     display: none;
   }
 
-  .hero-inner h3 {
-    margin-bottom: 1rem;
-  }
-
   .hero-inner.about {
     margin-top: 2rem;
   }
 
   .hello-disappear {
     display: block;
+    color: #ec5242;
+    font-size: 1.4rem;
   }
 
   .big-text {
