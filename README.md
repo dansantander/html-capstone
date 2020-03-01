@@ -1,7 +1,7 @@
 # Music Festival Website
 This is the main website for the "Aurora Music and Arts Festival 2020", a fictional festival I created for showcasing the different possibilities HTML5 and CSS3 allow us to perform. The project consists in biulding the Home Page, the About page and the Tickets selection page for the festival. It was developed using pure HTML and CSS with no frameworks. The site's responsiveness is made with pure media queries as well.
 
-![screenshot](/img/previweimg.jpg)
+![screenshot](/img/previewimg.jpg)
 
 # Built With
 - HTML
