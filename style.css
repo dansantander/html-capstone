@@ -133,6 +133,12 @@ header {
   height: 750px;
 }
 
+.hero.tickets {
+  height: 50px;
+  background-image: none;
+  background-color: #f5f5f5;
+}
+
 .hero.about {
   background-image: url(img/hero5b.jpg);
 }
@@ -219,10 +225,30 @@ header {
   cursor: pointer;
 }
 
-.tickets-tablewrapper {
+.tickets-step {
+  margin: 0 auto;
   margin-top: 2rem;
+  border: 1px solid #d3d3d3;
+  padding: 1rem 0;
+  border-radius: 30px;
+  width: 50%;
+}
+
+.tickets-step span {
+  color: #ec5242;
+}
+
+.fa-square-full {
+  color: #ec5242;
+  font-size: 0.5rem;
+  transform: rotateZ(45deg);
+}
+
+.tickets-tablewrapper {
+  margin: 2rem;
   border: 1px dashed rgb(96, 142, 240);
   padding: 1rem;
+  overflow-x: auto;
 }
 
 .tickets-table {
@@ -242,6 +268,47 @@ td {
 
 .nth-row {
   background-color: white;
+}
+
+.price {
+  color: #ec5242;
+}
+
+.radiobtn {
+  padding-top: 1rem;
+  display: block;
+}
+
+.wristbands {
+  border: 1px solid #d3d3d3;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wristband-top {
+  background-color: #ebebeb;
+  height: 50px;
+}
+
+.wristband-bottom {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.wristband-select {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+.radiobtn.wristbands {
+  display: inline-block;
+  border: none;
+  margin-left: 1rem;
 }
 
 /* Program */
@@ -331,6 +398,16 @@ td {
   display: none;
 }
 
+.program-btn.wristbands {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 60px;
+}
+
+.program-btn:hover {
+  cursor: pointer;
+}
+
 .hero-wrapper.about p {
   color: #5a5a5a;
 }
@@ -400,6 +477,11 @@ td {
 .about-logo {
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
+}
+
+.about-logo.tickets {
+  border-top: none;
+  background-color: #f5f5f5;
 }
 
 .about-logowrapper {
@@ -628,10 +710,6 @@ footer {
     margin: 0 auto;
   }
 
-  .program-btn:hover {
-    cursor: pointer;
-  }
-
   /* About Logo Mobile */
   .about-logowrapper {
     width: 100%;
@@ -642,6 +720,30 @@ footer {
   .see-past-img {
     width: 90%;
     grid-template-columns: 1fr;
+  }
+
+  /* Tickets Mobile */
+
+  .tickets-tablewrapper {
+    overflow-x: auto;
+  }
+
+  .wristband-select {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .about-logowrapper.tickets {
+    padding: 2rem 0;
+  }
+
+  .program-btn.wristbands {
+    padding: 30px 25px;
+  }
+
+  .tickets-step {
+    width: 90%;
   }
 
   /* Line up Mobile */
