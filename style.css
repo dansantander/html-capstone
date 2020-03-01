@@ -133,6 +133,10 @@ header {
   height: 750px;
 }
 
+.ghost-title {
+  display: none;
+}
+
 .hero.tickets {
   height: 50px;
   background-image: none;
@@ -644,6 +648,7 @@ footer {
     display: block;
     color: #ec5242;
     font-size: 1.4rem;
+    margin-bottom: 2rem;
   }
 
   .big-text {
