@@ -14,6 +14,7 @@ This is the main website for the "Aurora Music and Arts Festival 2020", a fictio
 [Live Demo Link](https://raw.githack.com/dansantander/html-capstone/capstone-features/index.html)
 
 # Preview Video
+[Preview Video](https://www.loom.com/share/7d5cea66e94d4275a1fd5c387ecb5477)
 
 
 ### Prerequisites

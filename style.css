@@ -55,6 +55,7 @@ header {
 .socials {
   float: right;
   margin: 0 2rem;
+  cursor: pointer;
 }
 
 .socials i {
@@ -338,7 +339,7 @@ td {
 }
 
 .title-wrapper {
-  width: 20%;
+  width: 10%;
   margin: 0 auto;
 }
 
