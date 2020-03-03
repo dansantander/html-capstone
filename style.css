@@ -1,0 +1,820 @@
+@import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot");
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.svg#COCOGOOSE") format("svg");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: COCOGOOSE, sans-serif;
+}
+
+h3,
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-color: #272a31;
+  color: white;
+  height: 30px;
+}
+
+.head-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 0.4rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.socials {
+  float: right;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.socials i {
+  padding: 0 5px;
+}
+
+.links {
+  width: 180px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  height: 65px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  box-shadow: 5px 10px 18px #888;
+  z-index: 1;
+}
+
+.nav-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s-list {
+  display: flex;
+}
+
+.s-list li {
+  margin-left: 3rem;
+  margin-top: 1.4rem;
+}
+
+.s-list a {
+  color: #272a31;
+  font-size: 0.8rem;
+}
+
+.sl-item.campaign {
+  border: 4px solid #ec5242;
+  color: #ec5242;
+  padding: 8px;
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+/* ----- MAIN PAGE ----- */
+
+/* Hero */
+
+.fas.fa-bars {
+  display: none;
+}
+
+.hero {
+  background-image: url(img/hero5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
+.ghost-title {
+  display: none;
+}
+
+.hero.tickets {
+  height: 50px;
+  background-image: none;
+  background-color: #f5f5f5;
+}
+
+.hero.about {
+  background-image: url(img/hero5b.jpg);
+}
+
+.hero-wrapper {
+  width: 70%;
+  height: inherit;
+  margin: 0 auto;
+  position: relative;
+}
+
+.route {
+  position: absolute;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  top: 2rem;
+  right: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.fa-chevron-right {
+  color: #ec5242;
+}
+
+.hero-inner {
+  position: absolute;
+  bottom: 6rem;
+}
+
+.hero-inner.about {
+  text-align: center;
+}
+
+.hello {
+  color: #ec5242;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hello-disappear {
+  display: none;
+}
+
+.big-text {
+  margin: 2rem 0;
+  color: #272a31;
+  font-size: 6rem;
+  line-height: 5rem;
+  max-width: 700px;
+}
+
+.big-text.about {
+  font-size: 5rem;
+  color: #ec5242;
+  max-width: initial;
+}
+
+.exp {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 800px;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.exp.about {
+  max-width: initial;
+}
+
+.date h2 {
+  color: #ec5242;
+  font-size: 2rem;
+}
+
+.contact-mail {
+  padding-top: 10px;
+  color: #272a31;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tickets-step {
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: 1px solid #d3d3d3;
+  padding: 1rem 0;
+  border-radius: 30px;
+  width: 50%;
+}
+
+.tickets-step span {
+  color: #ec5242;
+}
+
+.fa-square-full {
+  color: #ec5242;
+  font-size: 0.5rem;
+  transform: rotateZ(45deg);
+}
+
+.tickets-tablewrapper {
+  margin: 2rem;
+  border: 1px dashed rgb(96, 142, 240);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.tickets-table {
+  border: 1px dashed #ec5242;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+th,
+td {
+  padding: 2rem;
+}
+
+.top-row {
+  background-color: #ebebeb;
+}
+
+.nth-row {
+  background-color: white;
+}
+
+.price {
+  color: #ec5242;
+}
+
+.radiobtn {
+  padding-top: 1rem;
+  display: block;
+}
+
+.wristbands {
+  border: 1px solid #d3d3d3;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wristband-top {
+  background-color: #ebebeb;
+  height: 50px;
+}
+
+.wristband-bottom {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.wristband-select {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+.radiobtn.wristbands {
+  display: inline-block;
+  border: none;
+  margin-left: 1rem;
+}
+
+/* Program */
+
+.program {
+  background-image: url(img/programbg.jpg);
+  min-height: 50vh;
+  padding-bottom: 2rem;
+}
+
+.see-more {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.program a {
+  color: #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  padding-top: 1rem;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.title-wrapper {
+  width: 10%;
+  margin: 0 auto;
+}
+
+.program-title {
+  text-align: center;
+  margin: 0 auto;
+  color: #d3d3d3;
+  padding-bottom: 1rem;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.bottomline {
+  width: 20%;
+  margin: 0 auto;
+  border-bottom: 1px solid orangered;
+}
+
+.boxes {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba(84, 88, 110, 0.5);
+  height: 200px;
+  padding: 20px 10px;
+}
+
+.box h3 {
+  color: #ec5242;
+  font-weight: 300;
+}
+
+.box i {
+  color: white;
+}
+
+.box p {
+  font-size: 0.8vw;
+  color: #d3d3d3;
+}
+
+.program-btn {
+  background-color: #ec5242;
+  color: white;
+  border: none;
+  padding: 30px 25px;
+  font-size: 1rem;
+  display: none;
+}
+
+.program-btn.wristbands {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 60px;
+}
+
+.program-btn:hover {
+  cursor: pointer;
+}
+
+.hero-wrapper.about p {
+  color: #5a5a5a;
+}
+
+/* Line up */
+
+.line-up {
+  background-color: #f3f3f3;
+}
+
+.program-title.dark {
+  color: #272a31;
+}
+
+.program-title.dark::before {
+  left: 3.5rem;
+}
+
+.lineup-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-gap: 2rem;
+}
+
+.band {
+  display: flex;
+  justify-content: space-between;
+}
+
+.band-imgwrapper {
+  height: 120px;
+  width: 150px;
+  overflow: hidden;
+}
+
+.band-img {
+  width: 200%;
+}
+
+.band-info {
+  max-width: 400px;
+  margin-left: 2rem;
+}
+
+.toptext {
+  color: #ec5242;
+  font-size: 0.8rem;
+}
+
+.bottomtext {
+  color: #272a31;
+  font-size: 0.8rem;
+  padding-top: 1.2rem;
+}
+
+.lineup-btn {
+  display: none;
+}
+
+/* About */
+
+.about-logo {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.about-logo.tickets {
+  border-top: none;
+  background-color: #f5f5f5;
+}
+
+.about-logowrapper {
+  border: none;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 2rem 5rem;
+}
+
+.about-logo.img {
+  border: 1px solid #d3d3d3;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.aurora-about-logo {
+  width: 100%;
+}
+
+/* See past */
+.see-past {
+  padding-bottom: 2rem;
+}
+
+.see-past-img {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  justify-self: center;
+}
+
+.past-ed1 {
+  background-image: linear-gradient(115deg, rgba(252, 64, 7, 0.6), rgba(185, 53, 0, 0.5)), url(img/past-ed1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-ed1.two {
+  background-image: linear-gradient(115deg, rgba(252, 64, 7, 0.6), rgba(185, 53, 0, 0.5)), url(img/past-ed2.jpg);
+}
+
+/* Sponsors */
+
+.sponsors {
+  background-color: #424242;
+  height: 200px;
+}
+
+.sponsors.about {
+  display: none;
+}
+
+.sponsors-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  height: 25vh;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors-logos {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 2rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+.sp-container {
+  max-width: 150px;
+}
+
+.spon-logo {
+  width: 100%;
+  filter: opacity(80%);
+}
+
+.sponsors-wrapper.appear {
+  display: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: #f3f3f3;
+}
+
+.footer.about {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+.footer-box {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer-logo {
+  width: 200px;
+  fill: #424242;
+}
+
+.footer.about .footer-logo {
+  fill: white;
+}
+
+.footer-info {
+  width: 70%;
+  padding-left: 5rem;
+  font-size: 0.8rem;
+}
+
+/* MOBILE SIZE */
+
+@media (max-width: 768px) {
+  header,
+  .navbar {
+    display: none;
+  }
+
+  .hero-wrapper {
+    width: 90%;
+    position: relative;
+  }
+
+  .fas.fa-bars {
+    display: block;
+    color: #272a31;
+    opacity: 80%;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .route {
+    display: none;
+  }
+
+  .hero-inner.about {
+    margin-top: 2rem;
+  }
+
+  .hello-disappear {
+    display: block;
+    color: #ec5242;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .big-text {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0;
+  }
+
+  .big-text.about {
+    font-size: 10vw;
+    line-height: 4rem;
+  }
+
+  .exp {
+    font-size: 1em;
+    margin: 1rem 0;
+  }
+
+  .exp.about {
+    font-size: 12px;
+  }
+
+  .date h2 {
+    font-size: 1rem;
+  }
+
+  /* Program Mobile */
+
+  .title-wrapper {
+    width: 60%;
+  }
+
+  .boxes {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr;
+    grid-gap: 15px;
+    text-align: start;
+    height: auto;
+  }
+
+  .box i {
+    font-size: 2rem;
+  }
+
+  .box h3 {
+    font-size: 15px;
+  }
+
+  .box p {
+    font-size: 12px;
+  }
+
+  .see-more {
+    display: none;
+  }
+
+  .program-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* About Logo Mobile */
+  .about-logowrapper {
+    width: 100%;
+  }
+
+  /* Past Editions Mobile */
+
+  .see-past-img {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  /* Tickets Mobile */
+
+  .tickets-tablewrapper {
+    overflow-x: auto;
+  }
+
+  .wristband-select {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .about-logowrapper.tickets {
+    padding: 2rem 0;
+  }
+
+  .program-btn.wristbands {
+    padding: 30px 25px;
+  }
+
+  .tickets-step {
+    width: 90%;
+  }
+
+  /* Line up Mobile */
+
+  .lineup-wrapper {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .band-imgwrapper {
+    width: 180px;
+  }
+
+  .band.disappear {
+    display: none;
+  }
+
+  .lineup-btn {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+  }
+
+  .lineup-btn:hover {
+    cursor: pointer;
+  }
+
+  .fa-chevron-down {
+    color: #ec5242;
+  }
+
+  /* Sponsors Mobile */
+
+  .sponsors {
+    height: 250px;
+  }
+
+  .sponsors-wrapper {
+    min-width: 200px;
+    max-width: 45%;
+    height: auto;
+  }
+
+  .sponsors-logos {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .sp-container {
+    max-width: 80px;
+  }
+
+  /* Footer Mobile */
+
+  .footer-info {
+    padding-left: 2rem;
+  }
+
+  .footer-box {
+    width: 90%;
+  }
+
+  .ticketmaster-info {
+    display: none;
+  }
+}
